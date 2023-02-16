@@ -1,8 +1,8 @@
 from openpyxl import *
 import sqlite3
 
-workbook = load_workbook(r'F:\Prog\Py\b1.xlsx')
-sheet = workbook['123']
+workbook = load_workbook(r'...')
+sheet = workbook['...']
 for num in range(40):
         row_num = num + 26 
         a = sheet['A1' + str(row_num)].value 
