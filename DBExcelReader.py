@@ -1,8 +1,8 @@
 from openpyxl import *
 import sqlite3
 
-workbook = load_workbook(r'F:\Prog\Py\b1.xlsx')
-sheet = workbook['123']
+workbook = load_workbook(r'...')
+sheet = workbook['...']
 sqlite_connection = sqlite3.connect('ltx.db')
 cursor = sqlite_connection.cursor()
 sqlite_insert_query = """INSERT INTO ltx (Id,Cudnum,Koatyy,Area,District,Settlement,Street,TGName,PurposeOfTheAssignment,NameOfTheSite,TransactionType,Price,OwnershipType,RegistrationDate,RegistrationNumber,ValueNGO,EvaluationDate) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
