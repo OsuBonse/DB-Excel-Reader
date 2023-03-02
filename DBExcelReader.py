@@ -26,6 +26,7 @@ for i in range(4, 33):
      q = sheet.cell(row=i, column = 18).value
      r = sheet.cell(row=i, column = 19).value
      cursor.execute(sqlite_insert_query,(a,b,c,d,e,f,g,h,x,j,k,l,m,n,o,p,q))
-     sqlite_connection.commit()
+
+sqlite_connection.commit()
 cursor.close() 
 sqlite_connection.close()
