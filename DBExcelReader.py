@@ -5,7 +5,7 @@ workbook = load_workbook(r'...')
 sheet = workbook['...']
 sqlite_connection = sqlite3.connect('ltx.db')
 cursor = sqlite_connection.cursor()
-sqlite_insert_query = """INSERT INTO ltx (Id,Cudnum,Koatyy,Area,District,Settlement,Street,TGName,PurposeOfTheAssignment,NameOfTheSite,TransactionType,Price,OwnershipType,RegistrationDate,RegistrationNumber,ValueNGO,EvaluationDate) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
+sqlite_insert_query = """INSERT INTO mon (Id,Cudnum,Koatyy,Area,District,Settlement,Street,TGName,PurposeOfTheAssignment,NameOfTheSite,TransactionType,Price,OwnershipType,RegistrationDate,RegistrationNumber,ValueNGO,EvaluationDate) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"""
 for i in range(4, 33):
      a = sheet.cell(row=i, column = 2).value
      b = sheet.cell(row=i, column = 3).value
